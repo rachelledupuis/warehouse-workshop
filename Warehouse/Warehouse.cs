@@ -8,5 +8,13 @@ namespace Warehouse
         {
             Items = items;
         }
+
+        public void getInventory()
+        {
+            foreach (Item item in Items)
+                {
+                    Console.WriteLine(item.InventoryAmount);
+                }
+        }
     }
 }

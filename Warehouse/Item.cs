@@ -4,13 +4,13 @@ namespace Warehouse
     {
         public string Name { get; set; }
         public double Price { get; set; }
-        public int Amount { get; set; }
+        public int InventoryAmount { get; set; }
 
-        public Item(string name, double price, int amount)
+        public Item(string name, double price, int inventoryAmount)
         {
             Name = name;
             Price = price;
-            Amount = amount;
+            InventoryAmount = inventoryAmount;
         }
     }
 }

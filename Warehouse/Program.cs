@@ -14,7 +14,7 @@ namespace Warehouse
                 banana,
             };
             Warehouse produceShop = new Warehouse(fruits);
-            Console.WriteLine(fruits);
+            produceShop.getInventory();
         }
     }
 }

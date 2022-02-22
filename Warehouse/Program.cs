@@ -15,7 +15,6 @@ namespace Warehouse
             };
             Warehouse produceShop = new Warehouse(fruits);
             produceShop.getInventory();
-            produceShop.decreaseInventory(apple, 10);
         }
     }
 }

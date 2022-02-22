@@ -21,5 +21,10 @@ namespace Warehouse
         {
             name.InventoryAmount -= amount;
         }
+
+        public void addInventory(Item name, int amount)
+        {
+            name.InventoryAmount += amount;
+        }
     }
 }

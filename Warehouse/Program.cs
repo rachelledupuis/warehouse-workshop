@@ -6,8 +6,8 @@ namespace Warehouse
     {
         static void Main(string[] args)
         {
-            Item apple = new Item("apple", 0.75, 100);
-            Item banana = new Item("banana", 0.41, 200);
+            Item apple = new Item("apples", 0.75, 100);
+            Item banana = new Item("bananas", 0.41, 200);
             var fruits = new List<Item>()
             {
                 apple,
@@ -15,6 +15,7 @@ namespace Warehouse
             };
             Warehouse produceShop = new Warehouse(fruits);
             produceShop.getInventory();
+            produceShop.decreaseInventory(apple, 10);
         }
     }
 }

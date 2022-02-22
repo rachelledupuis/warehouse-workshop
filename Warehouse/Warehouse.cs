@@ -13,8 +13,13 @@ namespace Warehouse
         {
             foreach (Item item in Items)
                 {
-                    Console.WriteLine(item.InventoryAmount);
+                    Console.WriteLine($"{item.Name}: {item.InventoryAmount}");
                 }
+        }
+
+        public void decreaseInventory(Item name, int amount)
+        {
+            name.InventoryAmount -= amount;
         }
     }
 }

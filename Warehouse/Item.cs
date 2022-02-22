@@ -12,5 +12,10 @@ namespace Warehouse
             Price = price;
             InventoryAmount = inventoryAmount;
         }
+
+        public void decreaseInventory(Item name, int amount)
+        {
+            name.InventoryAmount -= amount;
+        }
     }
 }
